@@ -1,0 +1,172 @@
+.section1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  @include fondo-degradado;
+
+  &__titulo {
+    font-size: 50px;
+    padding: 5%;
+  }
+
+  &__imagen {
+    width: 100%;
+    max-height: 450px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.section2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  &__laterales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    figure {
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.3);
+        }
+      }
+    }
+
+    h3 {
+      margin-bottom: 10px;
+      padding: 5px;
+      border-radius: 10px;
+      @include fondo-degradado;
+    }
+  }
+  
+  &__centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    img {
+      width: 30px;
+    }
+
+    .flecha__de {
+      animation-name: efecto;
+      animation-duration: 0.8s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    .flecha__izq {
+      @extend .flecha__de;
+      animation-name: efecto2;
+    }
+
+    @keyframes efecto2 {
+      0% {
+        transform: translateX(0px);
+      }
+    
+      100% {
+        transform: translateX(-10px);
+      }
+    }
+    
+    @keyframes efecto {
+      0% {
+        transform: translateX(0px);
+      }
+    
+      100% {
+        transform: translateX(10px);
+      }
+    }
+
+    .flecha__arriba,
+    .flecha__abajo {
+      display: none;
+    }
+  }
+}
+
+
+
+.section3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  min-height: 50vh;
+  @include fondo-degradado;
+
+  p {
+    justify-self: center;
+    width: 90%;
+    min-height: 70px;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 20px;
+    margin-bottom: 0;
+  }
+  
+  iframe {
+    justify-self: center;
+    border: 3px solid $color-oscuro;
+  }
+}
+
+.section4 {
+  min-height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  margin-bottom: 20px;
+
+  &__titulo {
+    align-self: center;
+    font-size: 30px;
+    grid-column: 1 / 3;
+  }
+
+  &__compromisos {
+    width: 70%;
+
+    img {
+      width: 70px;
+      height: 70px;
+    }
+
+    figcaption {
+      font-size: 25px;
+    }
+
+    p {
+      text-align: justify;
+    }
+    
+    figure {
+      text-align: center;
+    }
+  }
+}

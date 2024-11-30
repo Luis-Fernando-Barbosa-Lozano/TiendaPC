@@ -1,0 +1,41 @@
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px 0 30px;
+  min-height: 150px;
+  @include fondo-degradado;
+
+  &__izq {
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: $color-oscuro;
+    }
+  }
+
+  &__derecha {
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      padding: 2px;
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .secciones--color:hover {
+    color: $color-enfasis;
+  }
+}
