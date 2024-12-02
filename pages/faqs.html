@@ -5,14 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Las preguntas mas frecuentes sobre nosotros estan reunidas en esta pagina, quizas pueda ayudarte de una manera rapida">
-  <meta name="keywords" content="dudas, preguntas, animales, comida, perro, gato, salud, veterinario, dieta barf, mascota saludable, dieta">
+  <meta name="keywords" content="procesadores, graficas, cpu, gpu, romina">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;400;700&family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/style.min.css">
-  <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
-  <title>MASCOMIDA | Faqs</title>
+  <link rel="shortcut icon" href="../images/romina.png" type="image/x-icon">
+  <title>TECHJUINOS | Faqs</title>
 </head>
 <body>
   <header class="header">
@@ -52,6 +52,13 @@
     <dl class="faqs__lista">
       <dt class="lista--preguntas">Asistente de busqueda </dt>
       <dd class="lista--respuestas">Conoce a Romina nuestra asistente virtual que te ayudara a realizar busquedas para resolver tus dudas</dd>
+      <div id="chatbot-container" class="chatbot-container">
+        <div id="chatbot" class="chatbot">
+          <div id="chatbot-messages" class="chatbot-messages"></div>
+          <input type="text" id="chatbot-input" class="chatbot-input" placeholder="Escribe tu mensaje...">
+          <button id="chatbot-send" class="chatbot-send">Enviar</button>
+        </div>
+      </div>
 
     </dl>
   </main>
@@ -71,5 +78,6 @@
   </footer>
   <script src="https://kit.fontawesome.com/8bbf7b9ae4.js" crossorigin="anonymous"></script>
   <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/chatbot.js"></script>
 </body>
 </html>

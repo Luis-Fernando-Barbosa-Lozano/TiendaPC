@@ -1,0 +1,22 @@
+{
+  "información": {
+    "definiciones": {
+      "gpu": "Una GPU (Graphics Processing Unit) o unidad de procesamiento gráfico es un componente de hardware que se encarga de procesar y mostrar imágenes en una computadora. \nLa GPU es un circuito electrónico que realiza cálculos matemáticos a alta velocidad, lo que le permite realizar la misma operación en varios valores en paralelo. Esto hace que sea más eficiente el procesamiento de tareas que requieren mucha capacidad de cómputo.",
+      "cpu": "La CPU (Central Processing Unit) o unidad central de procesamiento es el componente principal de una computadora. \nLa CPU es un circuito integrado que se encarga de ejecutar las instrucciones de los programas y realizar operaciones aritméticas y lógicas. Es el cerebro de la computadora y se encarga de coordinar y controlar todas las operaciones del sistema."
+    }
+  },
+  "recomendaciones": {
+    "grafica": [
+      { "nombre": "RTX 4090", "precio": 41990 },
+      { "nombre": "RTX 4060 oc", "precio": 7905 },
+      { "nombre": "Radeon RX 6600", "precio": 4390 }
+    ],
+    "procesador": [
+      { "nombre": "Intel core i9 14900F", "precio": 12782 },
+      { "nombre": "Intel i9 12900k", "precio": 7098 },
+      { "nombre": "Ryzen 5 8600g", "precio": 4299 }
+    ]
+  },
+  "compra": "Puedes consultar estas opciones de compra en línea:",
+  "desconocido": "Lo siento, no estoy seguro de cómo responder a eso. ¿Puedes darme más detalles?"
+}
